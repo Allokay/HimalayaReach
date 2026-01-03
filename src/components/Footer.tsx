@@ -24,8 +24,8 @@ export default function Footer() {
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 mt-1 flex-shrink-0 text-[#C0392B]" />
                   <span className="text-gray-300">
-                    Kathmandu, Nepal<br />
-                    Central Business District
+                    Koteshwor, Kathmandu,<br />
+                    Nepal
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -39,7 +39,7 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 flex-shrink-0 text-[#C0392B]" />
-                  <span className="text-gray-300">+977 1 XXXXXXX</span>
+                  <span className="text-gray-300">+977 9761444489</span>
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function Footer() {
       </footer>
 
       <motion.a
-        href="https://wa.me/9771XXXXXXX"
+        href="https://wa.me/9779806762336"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0 }}
