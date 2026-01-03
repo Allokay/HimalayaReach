@@ -12,7 +12,7 @@ export default function Hero({ onOpenIdeaForm, onOpenPartnerForm }: HeroProps) {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://i.pinimg.com/736x/3f/11/30/3f11304b704850cb6ad8e27e6a3a56cb.jpg')`,
+          backgroundImage: `url('https://i.pinimg.com/736x/80/bb/ac/80bbac0f2981e85796dffaf11b100e15.jpg')`,
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-br from-[#2C3E50]/90 via-[#2C3E50]/80 to-[#2C3E50]/70" />
