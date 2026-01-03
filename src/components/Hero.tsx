@@ -42,13 +42,7 @@ export default function Hero({ onOpenIdeaForm, onOpenPartnerForm }: HeroProps) {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
         >
-          <button
-            onClick={onOpenIdeaForm}
-            className="group bg-[#C0392B] hover:bg-[#A93226] text-white px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-          >
-            <span>Submit Your Idea</span>
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+         
 
           <button
             onClick={onOpenPartnerForm}
