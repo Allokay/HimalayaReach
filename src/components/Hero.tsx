@@ -15,7 +15,7 @@ export default function Hero({ onOpenIdeaForm, onOpenPartnerForm }: HeroProps) {
           backgroundImage: `url('https://pin.it/3RW07Dat7')`,
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-[#2C3E50]/30 via-[#2C3E50]/20 to-[#2C3E50]/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#2C3E50]/90 via-[#2C3E50]/80 to-[#2C3E50]/70" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.h1
