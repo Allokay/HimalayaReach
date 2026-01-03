@@ -8,12 +8,14 @@ export default function Quotes() {
       author: 'Nelson Mandela',
     },
     {
-      text: 'The essence of strategy is choosing what not to do.',
-      author: 'Michael E. Porter',
-    },
-    {
       text: 'Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.',
       author: 'Sun Tzu',
+
+    },
+    {
+            text: 'The essence of strategy is choosing what not to do.',
+      author: 'Michael E. Porter',
+      
     },
   ];
 
