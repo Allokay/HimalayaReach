@@ -24,21 +24,9 @@ function App() {
       <Quotes />
       <Footer />
 
-      <Modal
-        isOpen={isIdeaModalOpen}
-        onClose={() => setIsIdeaModalOpen(false)}
-        title="Submit Your Idea"
-      >
-        <IdeaForm type="idea" />
-      </Modal>
+      
 
-      <Modal
-        isOpen={isPartnerModalOpen}
-        onClose={() => setIsPartnerModalOpen(false)}
-        title="Partner With Us"
-      >
-        <IdeaForm type="partner" />
-      </Modal>
+     
     </div>
   );
 }
