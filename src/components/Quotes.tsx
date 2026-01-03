@@ -4,15 +4,15 @@ import { Quote } from 'lucide-react';
 export default function Quotes() {
   const quotes = [
     {
-      text: 'Strategy is the art of making the invisible, visible.',
-      author: 'Sun Tzu',
+      text: 'It always seems impossible until it’s done.',
+      author: 'Nelson Mandela',
     },
     {
-      text: 'In the middle of difficulty lies opportunity.',
-      author: 'Albert Einstein',
+      text: 'The essence of strategy is choosing what not to do.',
+      author: 'Michael E. Porter',
     },
     {
-      text: 'The supreme art of war is to subdue the enemy without fighting.',
+      text: 'Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.',
       author: 'Sun Tzu',
     },
   ];
