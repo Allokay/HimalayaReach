@@ -36,22 +36,7 @@ export default function Hero({ onOpenIdeaForm, onOpenPartnerForm }: HeroProps) {
           Data-backed growth for entrepreneurs and precision strategy for political leaders.
         </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
-        >
-         
-
-          <button
-            onClick={onOpenPartnerForm}
-            className="group bg-white hover:bg-gray-50 text-[#2C3E50] px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-          >
-            <Users className="w-5 h-5" />
-            <span>Partner With Us</span>
-          </button>
-        </motion.div>
+        
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
