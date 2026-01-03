@@ -16,7 +16,10 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-    
+        <Hero
+        onOpenIdeaForm={() => setIsIdeaModalOpen(true)}
+        onOpenPartnerForm={() => setIsPartnerModalOpen(true)}
+      />
       <About />
       <Services />
       <SocialWall />
