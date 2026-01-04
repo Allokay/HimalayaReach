@@ -8,15 +8,51 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
 
-            {/* Left: Company */}
+            {/* Left: Company + Follow Us */}
             <div className="space-y-6">
+              {/* Company Logo + Name */}
               <div className="flex items-center space-x-3">
                 <img src="/logo.png" alt="Himalaya Reach Logo" className="w-12 h-auto" />
                 <span className="font-serif text-2xl font-bold">Himalaya Reach</span>
               </div>
+              {/* Company Description */}
               <p className="text-gray-300 leading-relaxed">
                 A boutique strategy firm specializing in business growth consulting and political strategy.
               </p>
+
+              {/* Follow Us Section moved here */}
+              <div className="space-y-2 mt-4">
+                <h3 className="font-serif text-xl font-bold">Follow Us</h3>
+                <div className="flex space-x-4">
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white/10 p-3 rounded-lg hover:bg-[#C0392B] transition-colors"
+                    aria-label="LinkedIn"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white/10 p-3 rounded-lg hover:bg-[#C0392B] transition-colors"
+                    aria-label="Facebook"
+                  >
+                    <Facebook className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white/10 p-3 rounded-lg hover:bg-[#C0392B] transition-colors"
+                    aria-label="X (Twitter)"
+                  >
+                    <Twitter className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
             </div>
 
             {/* Middle: Contact Info */}
@@ -62,37 +98,6 @@ export default function Footer() {
                 <p className="text-gray-300 text-sm">Chief Strategist</p>
                 <p className="text-white font-serif font-bold text-lg mt-1">Suman Raj Poudel</p>
                 <p className="text-gray-400 text-xs mt-1 italic">Expert in Business & Political Strategy</p>
-              </div>
-
-              {/* Social Media Buttons below */}
-              <div className="flex space-x-4 mt-4">
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white/10 p-3 rounded-lg hover:bg-[#C0392B] transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white/10 p-3 rounded-lg hover:bg-[#C0392B] transition-colors"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white/10 p-3 rounded-lg hover:bg-[#C0392B] transition-colors"
-                  aria-label="X (Twitter)"
-                >
-                  <Twitter className="w-5 h-5" />
-                </a>
               </div>
             </div>
 
