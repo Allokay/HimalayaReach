@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="space-y-6">
               {/* Company Logo + Name */}
               <div className="flex items-center space-x-3">
-                <img src="/logo.png" alt="Himalaya Reach Logo" className="w-12 h-auto" />
+                <img src="/logo.png" alt="Himalaya Reach Logo" className="w-18 h-auto" />
                 <span className="font-serif text-2xl font-bold">Himalaya Reach</span>
               </div>
               {/* Company Description */}
@@ -21,7 +21,7 @@ export default function Footer() {
               </p>
 
               {/* Follow Us Section moved here */}
-              <div className="space-y-2 mt-4">
+              <div className="space-y-2 mt-8">
                 <h3 className="font-serif text-xl font-bold">Follow Us</h3>
                 <div className="flex space-x-4">
                   <a
