@@ -31,17 +31,18 @@ export default function Navigation() {
             onClick={() => scrollToSection('home')}
             className="flex items-center space-x-2 group"
           >
-            <Mountain
-              className={`w-7 h-7 transition-colors ${
-                isScrolled ? 'text-[#2C3E50]' : 'text-white'
-              }`}
-            />
+            <img
+  src="/logo.png"
+  alt="Himalayan Reach Logo"
+  className="h-8 w-auto"
+/>
+
             <span
               className={`font-serif text-lg font-bold transition-colors ${
                 isScrolled ? 'text-[#2C3E50]' : 'text-white'
               }`}
             >
-              Himalayan Reach
+              Himalaya Reach
             </span>
           </button>
 
