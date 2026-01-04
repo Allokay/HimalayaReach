@@ -16,10 +16,14 @@ export default function Footer() {
                 A boutique strategy firm specializing in business growth consulting and
                 political strategy in Nepal.
               </p>
-                  <p className="text-gray-300 mt-4 text-sm">
-                  <span className="font-medium text-white">Founder:</span> Sachin G Tandukar  
-                  <span className="font-medium text-white ml-2">Chief Strategist:</span> Suman Raj poudel 
-                 </p>
+                                <div className="mt-4 text-sm">
+  <p className="text-gray-300">
+    <span className="font-medium text-white">Founder:</span> Sachin G Tandukar
+  </p>
+  <p className="text-gray-300">
+    <span className="font-medium text-white">Chief Strategist:</span> Suman Raj poudel 
+  </p>
+</div>
 
             </div>
 
