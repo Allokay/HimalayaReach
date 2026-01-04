@@ -54,8 +54,19 @@ export default function Services() {
       icon: BarChart3,
       title: 'Sentiment Analysis',
       shortDesc: 'Real-time tracking of public opinion and perception.',
-      fullDesc: 'Using advanced analytics and ground intelligence, we track public sentiment in real-time. Our sentiment analysis covers social media, news media, and grassroots feedback. We identify trending topics, monitor approval ratings, detect emerging issues, and provide early warning of potential challenges.',
-    },
+      fullDesc:  {
+        paragraph:
+      'Using advanced analytics and ground intelligence, we track public sentiment in real-time across digital and on-ground channels. This enables leaders to understand public mood, anticipate shifts, and respond proactively.',
+    points: [
+      'Social media sentiment tracking (Twitter, Facebook, YouTube)',
+      'News and media perception analysis',
+      'Grassroots feedback and survey insights',
+      'Trending topic and narrative detection',
+      'Approval ratings and public trust monitoring',
+      'Early warning signals for emerging political or social risks',
+    ],
+      },
+  },
   ];
 
   const strategicDominance = [
