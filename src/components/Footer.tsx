@@ -10,12 +10,24 @@ export default function Footer() {
             <div>
               <div className="flex items-center space-x-2 mb-6">
                 <Mountain className="w-8 h-8" />
-                <span className="font-serif text-2xl font-bold">Himalayan Reach</span>
+                <span className="font-serif text-2xl font-bold">Himalaya Reach</span>
               </div>
               <p className="text-gray-300 leading-relaxed mb-4">
                 A boutique strategy firm specializing in business growth consulting and
                 political strategy in Nepal.
               </p>
+              <div className="mt-6">
+  <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-2">
+    Leadership
+  </h4>
+  <p className="text-gray-300">
+    <span className="font-medium text-white">Founder:</span> Your Name
+  </p>
+  <p className="text-gray-300">
+    <span className="font-medium text-white">Chief Strategist:</span> Your Name
+  </p>
+</div>
+
             </div>
 
             <div>
@@ -31,7 +43,7 @@ export default function Footer() {
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 flex-shrink-0 text-[#C0392B]" />
                   <a
-                    href="mailto:contact@himalayanreach.com"
+                    href="mailto:contact@himalayareach.com"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     contact@himalayanreach.com
@@ -79,7 +91,7 @@ export default function Footer() {
           </div>
 
           <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Himalayan Reach Consultant. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Himalaya Reach Consultant. All rights reserved.</p>
           </div>
         </div>
       </footer>
