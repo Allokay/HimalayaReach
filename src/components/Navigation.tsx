@@ -32,7 +32,7 @@ export default function Navigation() {
             className="flex items-center space-x-2 group"
           >
             <img
-  src="/public/logo.png"
+  src="/logo.png"
   alt="Himalayan Reach Logo"
   className="h-14 w-auto"
 />
