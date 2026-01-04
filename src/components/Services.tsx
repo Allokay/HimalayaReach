@@ -232,10 +232,10 @@ export default function Services() {
                     }
                     className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group transform hover:-translate-y-2"
                   >
-                    <div className="bg-[#2C3E50] w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#C0392B] transition-colors">
-                      <Icon className="w-6 h-6 text-white" />
+                    <div className="bg-[#2C3E50] w-14 h-14 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#C0392B] transition-colors">
+                      <Icon className="w-7 h-7 text-white" />
                     </div>
-                    <h3 className="font-serif text-lg font-bold text-[#2C3E50] mb-2">
+                    <h3 className="font-serif text-lg font-bold text-[#2C3E50] mb-3">
                       {service.title}
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">
