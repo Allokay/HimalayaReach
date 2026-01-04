@@ -87,15 +87,51 @@ export default function Services() {
   },
      {
       icon: Flag,
-      title: 'Campaign Management',
-      shortDesc: 'End-to-end political campaign orchestration.',
-      fullDesc: 'We provide comprehensive campaign management from strategy development to execution. This includes messaging framework, volunteer coordination, event planning, media relations, crisis management, and ground operations. Our team has deep understanding of Nepal\'s political landscape and voter behavior patterns.',
+      title: 'Opponents Research & Analysis',
+      shortDesc: 'Comprehensive intelligence on political rivals and their strategies.',
+      fullDesc: 'We conduct deep research into opponents’ campaign strategies, messaging, voter base, funding patterns, alliances, and historical performance. This enables precise counter-strategies, early risk identification, and informed decision-making throughout the campaign lifecycle.',
     },
      {
       icon: Flag,
-      title: 'Campaign Management',
-      shortDesc: 'End-to-end political campaign orchestration.',
-      fullDesc: 'We provide comprehensive campaign management from strategy development to execution. This includes messaging framework, volunteer coordination, event planning, media relations, crisis management, and ground operations. Our team has deep understanding of Nepal\'s political landscape and voter behavior patterns.',
+      title: 'Influencer Campaigning',
+      shortDesc: 'Leveraging trusted voices to shape public opinion.',
+      fullDesc: 'We identify and activate influential digital creators, community leaders, and opinion shapers aligned with your campaign goals. Our influencer strategies ensure authentic messaging, increased reach, and stronger emotional connection with target voter segments.',
+    },
+    {
+      icon: Flag,
+      title: 'Cyber Warrior Unit',
+      shortDesc: 'Defending and dominating the digital political space.',
+      fullDesc: 'Our cyber team monitors online platforms 24/7 to counter misinformation, fake news, coordinated attacks, and hostile narratives. Through rapid response, narrative correction, and strategic engagement, we safeguard and strengthen your digital reputation.',
+    },
+    {
+      icon: Flag,
+      title: 'Instant Polling Services',
+      shortDesc: 'Real-time voter sentiment for agile decision-making.',
+      fullDesc: 'We deliver fast, reliable polling insights through digital surveys, telephonic outreach, and targeted sampling. These instant feedback loops help refine messaging, adjust strategies, and respond quickly to shifting public opinion.',
+    },
+    {
+      icon: Flag,
+      title: 'Election Outcome Forecast',
+      shortDesc: 'Data-driven prediction of electoral results.',
+      fullDesc: 'Using advanced analytics, historical data, voter demographics, polling trends, and ground intelligence, we forecast election outcomes with high accuracy. Scenario-based forecasting helps campaigns prepare for multiple electoral possibilities..',
+    },
+    {
+      icon: Flag,
+      title: 'Campaign Impact Analysis',
+      shortDesc: 'Measuring what works—and what doesn’t.',
+      fullDesc: 'We analyze the impact of rallies, advertisements, social media activity, speeches, and grassroots outreach. By tracking engagement, sentiment shifts, and voter response, we help optimize campaign efforts for maximum effectiveness.',
+    },
+     {
+      icon: Flag,
+      title: 'Post-Campaign Impact Assessment',
+      shortDesc: 'Turning campaign data into future-winning insights.',
+      fullDesc: 'After elections, we conduct a detailed evaluation of campaign strategies, messaging effectiveness, digital performance, and voter outreach. The insights gained form a strong strategic foundation for future political planning and leadership positioning.',
+    },
+     {
+      icon: Flag,
+      title: 'Geographical Voter Pattern Analysis',
+      shortDesc: 'Mapping voter behavior across regions and constituencies.',
+      fullDesc: 'Our constituency-wise and booth-level analysis identifies strongholds, swing zones, and weak areas. This geographical intelligence enables targeted campaigning, efficient resource allocation, and localized messaging strategies.',
     },
   ];
 
