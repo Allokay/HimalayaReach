@@ -14,7 +14,7 @@ export default function Footer() {
               </div>
               <p className="text-gray-300 leading-relaxed mb-4">
                 A boutique strategy firm specializing in business growth consulting and
-                political strategy in Nepal.
+                political strategy.
               </p>
         <div className="mt-4">
   <p className="text-gray-300 text-base">
