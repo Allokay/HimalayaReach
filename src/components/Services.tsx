@@ -73,6 +73,18 @@ export default function Services() {
     ],
       },
   },
+     {
+      icon: Flag,
+      title: 'Campaign Management',
+      shortDesc: 'End-to-end political campaign orchestration.',
+      fullDesc: 'We provide comprehensive campaign management from strategy development to execution. This includes messaging framework, volunteer coordination, event planning, media relations, crisis management, and ground operations. Our team has deep understanding of Nepal\'s political landscape and voter behavior patterns.',
+    },
+     {
+      icon: Flag,
+      title: 'Campaign Management',
+      shortDesc: 'End-to-end political campaign orchestration.',
+      fullDesc: 'We provide comprehensive campaign management from strategy development to execution. This includes messaging framework, volunteer coordination, event planning, media relations, crisis management, and ground operations. Our team has deep understanding of Nepal\'s political landscape and voter behavior patterns.',
+    },
   ];
 
   const strategicDominance = [
