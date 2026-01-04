@@ -215,7 +215,8 @@ export default function Services() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16"
+              className="className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
+
             >
               {politicalServices.map((service, index) => {
                 const Icon = service.icon;
@@ -229,7 +230,7 @@ export default function Services() {
                         description: service.fullDesc,
                       })
                     }
-                    className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group transform hover:-translate-y-2"
+                    className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group transform hover:-translate-y-2"
                   >
                     <div className="bg-[#2C3E50] w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#C0392B] transition-colors">
                       <Icon className="w-6 h-6 text-white" />
