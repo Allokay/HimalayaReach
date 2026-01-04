@@ -35,6 +35,18 @@ export default function Services() {
       shortDesc: 'Craft compelling narratives that resonate with your audience.',
       fullDesc: 'Our social media campaigns go beyond basic posting. We develop comprehensive content strategies, manage multi-platform presence, create engaging visual and written content, track performance metrics, and continuously optimize for maximum reach and engagement. We understand the Nepali digital landscape and craft messages that drive real business results.',
     },
+    {
+      icon: Share2,
+      title: 'Social Media Campaigns',
+      shortDesc: 'Craft compelling narratives that resonate with your audience.',
+      fullDesc: 'Our social media campaigns go beyond basic posting. We develop comprehensive content strategies, manage multi-platform presence, create engaging visual and written content, track performance metrics, and continuously optimize for maximum reach and engagement. We understand the Nepali digital landscape and craft messages that drive real business results.',
+    },
+    {
+      icon: Share2,
+      title: 'Social Media Campaigns',
+      shortDesc: 'Craft compelling narratives that resonate with your audience.',
+      fullDesc: 'Our social media campaigns go beyond basic posting. We develop comprehensive content strategies, manage multi-platform presence, create engaging visual and written content, track performance metrics, and continuously optimize for maximum reach and engagement. We understand the Nepali digital landscape and craft messages that drive real business results.',
+    },
   ];
 
   const politicalServices = [
