@@ -5,6 +5,12 @@ import Modal from './Modal';
 
 export default function Services() {
   const [activeTab, setActiveTab] = useState<'business' | 'political'>('business');
+  type FullDescription =
+  | string
+  | {
+      paragraph: string;
+      points: string[];
+    };
   const [selectedService, setSelectedService] = useState<{
     title: string;
     description: string;
@@ -255,16 +261,33 @@ export default function Services() {
       </div>
 
       <Modal
-        isOpen={selectedService !== null}
-        onClose={() => setSelectedService(null)}
-        title={selectedService?.title}
-      >
-        <div className="prose max-w-none">
-          <p className="text-gray-700 leading-relaxed text-lg">
-            {selectedService?.description}
-          </p>
-        </div>
-      </Modal>
+  isOpen={selectedService !== null}
+  onClose={() => setSelectedService(null)}
+  title={selectedService?.title}
+>
+  <div className="max-w-none">
+    {typeof selectedService?.description === 'string' && (
+      <p className="text-gray-700 leading-relaxed text-lg">
+        {selectedService.description}
+      </p>
+    )}
+
+    {typeof selectedService?.description === 'object' && (
+      <>
+        <p className="text-gray-700 leading-relaxed text-lg mb-4">
+          {selectedService.description.paragraph}
+        </p>
+
+        <ul className="list-disc pl-5 space-y-2 text-gray-700">
+          {selectedService.description.points.map((point, index) => (
+            <li key={index}>{point}</li>
+          ))}
+        </ul>
+      </>
+    )}
+  </div>
+</Modal>
+
     </section>
   );
 }
