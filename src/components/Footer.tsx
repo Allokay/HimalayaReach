@@ -18,10 +18,10 @@ export default function Footer() {
               </p>
         <div className="mt-4">
   <p className="text-gray-300 text-base">
-    <span className="text-white font-semibold text-lg">Founder:</span> Your Name
+    <span className="text-white font-semibold text-lg">Founder:</span> Sachin G Tandukar 
   </p>
   <p className="text-gray-300 text-base">
-    <span className="text-white font-semibold text-lg">Chief Strategist:</span> Your Name
+    <span className="text-white font-semibold text-lg">Chief Strategist:</span> Suman Raj poudel 
   </p>
 </div>    
             </div>
