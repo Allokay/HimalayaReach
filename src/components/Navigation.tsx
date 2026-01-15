@@ -58,7 +58,19 @@ export default function Navigation() {
                 {section === 'home' ? 'Home' : section === 'about' ? 'About Us' : section === 'services' ? 'Services' : 'Contact'}
               </button>
             ))}
+            <a
+  href="/news.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`text-sm font-medium uppercase tracking-wide transition-colors hover:text-[#C0392B] ${
+    isScrolled ? 'text-[#2C3E50]' : 'text-white'
+  }`}
+>
+  News
+</a>
+
           </div>
+          
 
           <button
             className="md:hidden p-2"
@@ -104,6 +116,17 @@ export default function Navigation() {
               {section === 'home' ? 'Home' : section === 'about' ? 'About Us' : section === 'services' ? 'Services' : 'Contact'}
             </button>
           ))}
+          <a
+  href="/news.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`block w-full text-left py-2 text-sm font-medium uppercase tracking-wide ${
+    isScrolled ? 'text-[#2C3E50]' : 'text-white'
+  }`}
+>
+  News
+</a>
+
         </div>
       </div>
     </nav>
