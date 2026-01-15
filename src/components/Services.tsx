@@ -35,6 +35,12 @@ export default function Services() {
       shortDesc: 'Craft compelling narratives that resonate with your audience.',
       fullDesc: 'Our social media campaigns go beyond basic posting. We develop comprehensive content strategies, manage multi-platform presence, create engaging visual and written content, track performance metrics, and continuously optimize for maximum reach and engagement. We understand the Nepali digital landscape and craft messages that drive real business results.',
     },
+     {
+      icon: Target,
+      title: 'Digital Transformation',
+      shortDesc: 'Modernize operations through smart digital solutions.',
+      fullDesc: 'We help organizations adopt digital tools, automation, and data systems to improve efficiency, decision-making, and customer experience across all business functions.',
+    },
     {
       icon: Share2,
       title: 'Operational Efficiency & Process Improvement',
