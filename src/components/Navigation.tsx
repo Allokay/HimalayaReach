@@ -47,7 +47,7 @@ export default function Navigation() {
           </button>
 
           <div className="hidden md:flex items-center space-x-8">
-            {['home', 'about', 'services', 'contact'].map((section) => (
+            {['home', 'about', 'services'].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
@@ -68,6 +68,15 @@ export default function Navigation() {
 >
   News
 </a>
+            <button
+  onClick={() => scrollToSection('contact')}
+  className={`text-sm font-medium uppercase tracking-wide transition-colors hover:text-[#C0392B] ${
+    isScrolled ? 'text-[#2C3E50]' : 'text-white'
+  }`}
+>
+  Contact
+</button>
+            
 
           </div>
           
@@ -102,7 +111,7 @@ export default function Navigation() {
         </div>
 
         <div id="mobile-menu" className="hidden md:hidden mt-4 pb-4">
-          {['home', 'about', 'services', 'contact'].map((section) => (
+          {['home', 'about', 'services'].map((section) => (
             <button
               key={section}
               onClick={() => {
@@ -126,6 +135,14 @@ export default function Navigation() {
 >
   News
 </a>
+          <button
+  onClick={() => scrollToSection('contact')}
+  className={`block w-full text-left py-2 text-sm font-medium uppercase tracking-wide ${
+    isScrolled ? 'text-[#2C3E50]' : 'text-white'
+  }`}
+>
+  Contact
+</button>
 
         </div>
       </div>
