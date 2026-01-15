@@ -37,15 +37,15 @@ export default function Services() {
     },
     {
       icon: Share2,
-      title: 'Social Media Campaigns',
-      shortDesc: 'Craft compelling narratives that resonate with your audience.',
-      fullDesc: 'Our social media campaigns go beyond basic posting. We develop comprehensive content strategies, manage multi-platform presence, create engaging visual and written content, track performance metrics, and continuously optimize for maximum reach and engagement. We understand the Nepali digital landscape and craft messages that drive real business results.',
+      title: 'Operational Efficiency & Process Improvement',
+      shortDesc: 'Do more with fewer resources.',
+      fullDesc: 'We streamline workflows, reduce inefficiencies, and optimize internal processes to improve productivity and reduce operational costs.',
     },
     {
       icon: Share2,
-      title: 'Social Media Campaigns',
-      shortDesc: 'Craft compelling narratives that resonate with your audience.',
-      fullDesc: 'Our social media campaigns go beyond basic posting. We develop comprehensive content strategies, manage multi-platform presence, create engaging visual and written content, track performance metrics, and continuously optimize for maximum reach and engagement. We understand the Nepali digital landscape and craft messages that drive real business results.',
+      title: 'Startup & SME Advisory',
+      shortDesc: 'Strategic guidance for growing businesses.',
+      fullDesc: 'We support startups and SMEs with business planning, market validation, scaling strategies, and investor-ready positioning.',
     },
   ];
 
