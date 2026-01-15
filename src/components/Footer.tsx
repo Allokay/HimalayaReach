@@ -72,7 +72,7 @@ export default function Footer() {
                     href="mailto:info@himalayareach.com"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                    contact@himalayanreach.com
+                    info@himalayareach.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
