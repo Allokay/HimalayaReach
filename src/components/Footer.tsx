@@ -21,6 +21,8 @@ export default function Footer() {
               </p>
 
               {/* Follow Us Section moved here */}
+              </div>
+
             
 
             {/* Middle: Contact Info */}
