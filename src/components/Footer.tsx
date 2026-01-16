@@ -21,39 +21,7 @@ export default function Footer() {
               </p>
 
               {/* Follow Us Section moved here */}
-              <div className="space-y-2 mt-8">
-                <h3 className="font-serif text-xl font-bold">Follow Us</h3>
-                <div className="flex space-x-4">
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white/10 p-3 rounded-lg hover:bg-[#C0392B] transition-colors"
-                    aria-label="LinkedIn"
-                  >
-                    <Linkedin className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white/10 p-3 rounded-lg hover:bg-[#C0392B] transition-colors"
-                    aria-label="Facebook"
-                  >
-                    <Facebook className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white/10 p-3 rounded-lg hover:bg-[#C0392B] transition-colors"
-                    aria-label="X (Twitter)"
-                  >
-                    <Twitter className="w-5 h-5" />
-                  </a>
-                </div>
-              </div>
-            </div>
+            
 
             {/* Middle: Contact Info */}
             <div>
