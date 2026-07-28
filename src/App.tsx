@@ -1,33 +1,46 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import SocialWall from './components/SocialWall';
-import About from './components/About';
-import Quotes from './components/Quotes';
 import Footer from './components/Footer';
-import Modal from './components/Modal';
-import IdeaForm from './components/IdeaForm';
+import NoiseOverlay from './components/NoiseOverlay';
+import CookieBanner from './components/CookieBanner';
+
+// Pages
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import Contact from './pages/Contact';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 function App() {
-  const [isIdeaModalOpen, setIsIdeaModalOpen] = useState(false);
-  const [isPartnerModalOpen, setIsPartnerModalOpen] = useState(false);
-
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
-        <Hero
-      />
-      <About />
-      <Services />
-      <SocialWall />
-      <Quotes />
-      <Footer />
+    <HelmetProvider>
+      <Router>
+        <div className="min-h-screen bg-white">
+          <ScrollToTop />
+          <NoiseOverlay />
+          <Navigation />
+          
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
 
-      
-
-     
-    </div>
+          <Footer />
+          <CookieBanner />
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }
 

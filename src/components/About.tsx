@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Target, Globe, Lightbulb } from 'lucide-react';
+import { BookOpen, Target, Globe, Shield, Phone, MessageCircle } from 'lucide-react';
 import Modal from './Modal';
 
 export default function About() {
@@ -9,135 +9,169 @@ export default function About() {
   const values = [
     {
       icon: Target,
-      title: 'Regional Intelligence',
-      description: 'Deep understanding of South Asian political and business landscapes',
+      title: 'Precision Targeting',
+      description: 'Data-backed demographic mapping and voter psychographics.',
+      number: '01'
     },
     {
       icon: Globe,
       title: 'Global Standards',
-      description: 'International best practices adapted for local contexts',
+      description: 'International campaign best practices adapted for local constituencies.',
+      number: '02'
     },
     {
-      icon: Lightbulb,
-      title: 'Strategic Innovation',
-      description: 'Creative solutions to complex challenges',
+      icon: Shield,
+      title: 'Narrative Defense',
+      description: 'Proactive crisis management and counter-misinformation operations.',
+      number: '03'
     },
   ];
 
   const expandedContent = `
-    Himalayan Reach Consultant was founded on the belief that Nepal deserves world-class strategic advisory services that understand and respect its unique context. We are not a large multinational firm trying to apply cookie-cutter solutions to Nepali challenges. We are a boutique strategy house built by Nepalis, for Nepali interests.
+    Himalaya Reach is founded on the belief that Nepal deserves world-class strategic advisory services for its political leaders and campaigns. We are a strategy house built by Nepalis, for Nepali interests, designed to bring rigor and precision to the electoral process.
 
     Our Approach:
 
-    We combine rigorous analytical frameworks with deep cultural intelligence. Our team has lived the challenges our clients face. We understand the regulatory complexities, the relationship dynamics, the unwritten rules that govern success in Nepal. This insider knowledge, combined with international training and experience, creates a unique advantage.
-
-    For Business Clients:
-
-    We help entrepreneurs and established businesses navigate Nepal's evolving market landscape. From market entry strategy for international companies to growth strategy for Nepali enterprises, we provide the intelligence and strategic frameworks needed to succeed. We don't just analyze—we partner with our clients to implement winning strategies.
+    We combine rigorous analytical frameworks with deep cultural intelligence. Our team has lived the challenges our political leaders face. We understand the regulatory complexities, the alliance dynamics, and the unwritten rules that govern success in Nepali elections. This insider knowledge, combined with data-science and international campaign experience, creates a unique advantage.
 
     For Political Clients:
 
-    Politics in Nepal is complex, multi-layered, and constantly evolving. We provide the strategic infrastructure that modern campaigns require: data-driven voter insights, message development, digital strategy, and ground operations coordination. Our political work is guided by a commitment to democratic values and ethical campaign practices.
+    Politics in Nepal is complex, multi-layered, and constantly evolving. We provide the strategic infrastructure that modern campaigns require: data-driven voter insights, message development, digital strategy, and ground operations coordination. Our political work is guided by a commitment to democratic values, ethical campaign practices, and absolute discretion.
 
     Our Philosophy:
 
-    Strategy is not about creating elaborate presentations that sit on shelves. It's about making better decisions, faster. It's about seeing opportunities others miss and avoiding pitfalls others don't anticipate. It's about execution, not just planning.
+    Strategy is not about creating elaborate presentations. It's about making better decisions, faster. It's about seeing opportunities others miss, neutralizing attacks before they land, and positioning for inevitable victory. 
 
     We believe in:
     • Data over hunches
     • Execution over theory
-    • Long-term relationships over transactional engagements
-    • Elevating Nepali capabilities and interests
-    • Ethical practices in both business and politics
+    • Long-term alliances over transactional engagements
+    • Elevating Nepali democratic discourse
+    • Discretion and confidentiality above all else
 
-    Regional Expertise:
+    Why Choose Us:
 
-    While headquartered in Kathmandu, our perspective encompasses the broader Himalayan and South Asian region. We track policy developments in Delhi, Beijing, and Washington that affect Nepal. We understand how regional dynamics impact local opportunities. This macro-perspective informs our micro-strategies.
-
-    Why "Boutique":
-
-    We deliberately remain small and selective. This allows us to maintain quality, protect client confidentiality, and avoid conflicts of interest. Every client gets senior-level attention, not junior consultants learning on the job. We take on projects we believe in and where we can genuinely add value.
-
-    Our Commitment:
-
-    To our business clients: We commit to understanding your business as deeply as you do, bringing fresh perspectives, and staying engaged until strategies become results.
-
-    To our political clients: We commit to ethical campaign practices, data-driven strategies, and building democratic discourse while pursuing electoral success.
-
-    To Nepal: We commit to building institutional knowledge, developing local talent, and elevating the standard of strategic advisory services available in the country.
+    We deliberately remain small and selective. This allows us to maintain quality, protect client confidentiality, and avoid conflicts of interest. Every campaign gets senior-level attention. We take on leaders we believe in and where we can genuinely secure a mandate.
   `;
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto"
-        >
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#2C3E50] mb-6 text-center">
-            A Boutique Strategy House
-          </h2>
+    <section id="about" className="py-32 bg-gray-50 relative overflow-hidden">
+      <div className="absolute top-0 right-0 transform translate-x-1/3 -translate-y-1/4 select-none opacity-5 pointer-events-none">
+        <span className="font-serif text-[40rem] font-bold text-ink leading-none">I</span>
+      </div>
 
-          <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-12">
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Himalayan Reach Consultant operates at the intersection of business acumen and
-              political intelligence. Based in Kathmandu, we serve as strategic advisors to
-              entrepreneurs, investors, and political leaders navigating Nepal's complex and
-              dynamic landscape.
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+          
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            className="lg:col-span-5 lg:sticky lg:top-32 flex flex-col"
+          >
+            <div className="text-gold font-medium uppercase tracking-[0.2em] text-xs mb-6">Our Core Mandate</div>
+            <h2 className="font-serif text-5xl md:text-6xl font-bold text-ink mb-8 leading-tight tracking-tight">
+              A Premier <br/> Strategy House.
+            </h2>
+            
+            <p className="text-xl text-gray-700 leading-relaxed mb-6 font-light">
+              Himalaya Reach operates at the intersection of data science and 
+              political intelligence.
             </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              We are not generalists. Our focus is singular: providing the strategic clarity
-              and operational frameworks that separate winners from participants. Whether it's
-              entering a new market, scaling a business, or winning an election, we bring
-              data-backed insights and proven methodologies.
+            <p className="text-lg text-gray-500 leading-relaxed mb-12">
+              Based in Kathmandu, we serve as discreet strategic advisors to
+              political leaders, parties, and campaigns navigating Nepal's complex electoral landscape. We are not generalists. Our focus is singular: providing the strategic clarity, operational frameworks, and narrative dominance that separate winners from participants.
             </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              What distinguishes us is our dual capability. Few firms can credibly advise on
-              both business growth and political strategy. We can—because we understand that
-              in Nepal, business success and political awareness are inseparable. Policy
-              shifts, regulatory changes, and political developments directly impact business
-              outcomes. Similarly, economic trends and business sentiment shape political
-              fortunes.
-            </p>
+            {/* Political Revolution Image Integration */}
+            <div className="mb-12 relative grayscale hover:grayscale-0 transition-all duration-700 border border-gray-200">
+              <img 
+                src="/nepal_political_revolution.jpg" 
+                alt="Political revolution and democratic process in Nepal" 
+                className="w-full h-[300px] object-cover"
+              />
+              <div className="absolute inset-0 bg-ink/10 mix-blend-multiply" />
+            </div>
 
             <button
               onClick={() => setIsModalOpen(true)}
-              className="bg-[#C0392B] hover:bg-[#A93226] text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 flex items-center space-x-2 mx-auto shadow-lg hover:shadow-xl"
+              className="bg-transparent border border-ink text-ink hover:bg-ink hover:text-white px-8 py-4 rounded-none font-medium tracking-widest uppercase text-sm transition-all duration-300 flex items-center justify-center space-x-3 cursor-hover self-start"
             >
-              <BookOpen className="w-5 h-5" />
-              <span>Read Our Complete Philosophy</span>
+              <span>Our Full Philosophy</span>
+              <BookOpen className="w-4 h-4" />
             </button>
-          </div>
+          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="lg:col-span-6 lg:col-start-7 pt-12 lg:pt-32 flex flex-col gap-12">
             {values.map((value, index) => {
               const Icon = value.icon;
+              const isOffset = index % 2 !== 0;
               return (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-white rounded-lg p-6 shadow-lg text-center"
+                  transition={{ duration: 0.8, ease: 'easeOut', delay: index * 0.15 }}
+                  className={`relative bg-white p-10 md:p-14 shadow-sm border border-gray-100 ${isOffset ? 'lg:ml-24' : 'lg:mr-24'}`}
                 >
-                  <div className="bg-[#2C3E50] w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-7 h-7 text-white" />
+                  <div className="absolute top-4 right-6 font-serif text-7xl text-gray-100 font-bold select-none z-0">
+                    {value.number}
                   </div>
-                  <h3 className="font-serif text-xl font-bold text-[#2C3E50] mb-2">
-                    {value.title}
-                  </h3>
-                  <p className="text-gray-600">{value.description}</p>
+                  
+                  <div className="relative z-10">
+                    <div className="w-12 h-12 mb-8">
+                      <Icon className="w-full h-full text-ink" strokeWidth={1.5} />
+                    </div>
+                    <h3 className="font-serif text-2xl font-bold text-ink mb-4 tracking-tight">
+                      {value.title}
+                    </h3>
+                    <p className="text-gray-500 text-lg leading-relaxed font-light">{value.description}</p>
+                  </div>
                 </motion.div>
               );
             })}
           </div>
-        </motion.div>
+        </div>
+
+        {/* Team Section */}
+        <div className="mt-32 pt-24 border-t border-gray-200">
+          <div className="text-gold font-medium uppercase tracking-[0.2em] text-xs mb-12">Team</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
+            
+            {/* Team Member 1 */}
+            <div className="group relative overflow-hidden bg-white border border-gray-100 rounded-lg">
+              <div className="aspect-[4/5] bg-gray-200 relative">
+                {/* Placeholder Image Space */}
+                <div className="absolute inset-0 bg-gray-300 mix-blend-multiply flex items-center justify-center text-gray-500 font-light text-sm tracking-widest uppercase">
+                  Image Pending
+                </div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-ink p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                <h3 className="font-serif text-2xl font-bold text-white mb-1">Sachin G Tandukar</h3>
+                <p className="text-gray-300 text-sm font-medium">Founder</p>
+              </div>
+            </div>
+
+            {/* Team Member 2 */}
+            <div className="group relative overflow-hidden bg-white border border-gray-100 rounded-lg">
+              <div className="aspect-[4/5] bg-gray-200 relative">
+                {/* Placeholder Image Space */}
+                <div className="absolute inset-0 bg-gray-300 mix-blend-multiply flex items-center justify-center text-gray-500 font-light text-sm tracking-widest uppercase">
+                  Image Pending
+                </div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-ink p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                <h3 className="font-serif text-2xl font-bold text-white mb-1">Suman Raj Paudel</h3>
+                <p className="text-gray-300 text-sm font-medium">Chief Strategist</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
 
       <Modal
@@ -145,9 +179,9 @@ export default function About() {
         onClose={() => setIsModalOpen(false)}
         title="Our Philosophy & Approach"
       >
-        <div className="prose max-w-none">
+        <div className="prose prose-lg max-w-none prose-headings:font-serif">
           {expandedContent.split('\n\n').map((paragraph, index) => (
-            <p key={index} className="text-gray-700 leading-relaxed mb-4">
+            <p key={index} className="text-gray-700 leading-relaxed mb-6 font-light">
               {paragraph}
             </p>
           ))}

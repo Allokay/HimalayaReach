@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Mountain } from 'lucide-react';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,74 +14,57 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
+  const navLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'About Us', path: '/about' },
+    { name: 'Services', path: '/services' },
+  ];
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
+        isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4 border-b border-gray-100' : 'bg-transparent py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <button
-            onClick={() => scrollToSection('home')}
+          <Link
+            to="/"
             className="flex items-center space-x-2 group"
           >
-            <img
-  src="/logo.png"
-  alt="Himalayan Reach Logo"
-  className="h-14 w-auto"
-/>
-
+            <div className={`p-1.5 transition-colors ${isScrolled ? 'bg-ink' : 'bg-white/20'}`}>
+              <Mountain className={`w-8 h-8 ${isScrolled ? 'text-white' : 'text-white'}`} />
+            </div>
             <span
-              className={`font-serif text-lg font-bold transition-colors ${
-                isScrolled ? 'text-[#2C3E50]' : 'text-white'
+              className={`font-serif text-xl font-bold transition-colors ${
+                isScrolled ? 'text-ink' : 'text-white'
               }`}
             >
               Himalaya Reach
             </span>
-          </button>
+          </Link>
 
           <div className="hidden md:flex items-center space-x-8">
-            {['home', 'about', 'services'].map((section) => (
-              <button
-                key={section}
-                onClick={() => scrollToSection(section)}
-                className={`text-sm font-medium uppercase tracking-wide transition-colors hover:text-[#C0392B] ${
-                  isScrolled ? 'text-[#2C3E50]' : 'text-white'
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`text-sm font-medium uppercase tracking-wide transition-colors hover:text-accent ${
+                  location.pathname === link.path ? 'text-accent' : isScrolled ? 'text-ink' : 'text-white'
                 }`}
               >
-                {section === 'home' ? 'Home' : section === 'about' ? 'About Us' : section === 'services' ? 'Services' : 'Contact'}
-              </button>
+                {link.name}
+              </Link>
             ))}
-            <a
-  href="/news.html"
-  target="_blank"
-  rel="noopener noreferrer"
-  className={`text-sm font-medium uppercase tracking-wide transition-colors hover:text-[#C0392B] ${
-    isScrolled ? 'text-[#2C3E50]' : 'text-white'
-  }`}
->
-  News
-</a>
-            <button
-  onClick={() => scrollToSection('contact')}
-  className={`text-sm font-medium uppercase tracking-wide transition-colors hover:text-[#C0392B] ${
-    isScrolled ? 'text-[#2C3E50]' : 'text-white'
-  }`}
->
-  Contact
-</button>
-            
-
+            <Link
+              to="/contact"
+              className={`text-sm font-medium uppercase tracking-wide transition-colors hover:text-accent ${
+                location.pathname === '/contact' ? 'text-accent' : isScrolled ? 'text-ink' : 'text-white'
+              }`}
+            >
+              Contact
+            </Link>
           </div>
-          
 
           <button
             className="md:hidden p-2"
@@ -93,17 +78,17 @@ export default function Navigation() {
             <div className="space-y-1.5">
               <span
                 className={`block w-6 h-0.5 transition-colors ${
-                  isScrolled ? 'bg-[#2C3E50]' : 'bg-white'
+                  isScrolled ? 'bg-ink' : 'bg-white'
                 }`}
               />
               <span
                 className={`block w-6 h-0.5 transition-colors ${
-                  isScrolled ? 'bg-[#2C3E50]' : 'bg-white'
+                  isScrolled ? 'bg-ink' : 'bg-white'
                 }`}
               />
               <span
                 className={`block w-6 h-0.5 transition-colors ${
-                  isScrolled ? 'bg-[#2C3E50]' : 'bg-white'
+                  isScrolled ? 'bg-ink' : 'bg-white'
                 }`}
               />
             </div>
@@ -111,39 +96,31 @@ export default function Navigation() {
         </div>
 
         <div id="mobile-menu" className="hidden md:hidden mt-4 pb-4">
-          {['home', 'about', 'services'].map((section) => (
-            <button
-              key={section}
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
               onClick={() => {
-                scrollToSection(section);
                 document.getElementById('mobile-menu')?.classList.add('hidden');
               }}
-              className={`block w-full text-left py-2 text-sm font-medium uppercase tracking-wide transition-colors hover:text-[#C0392B] ${
-                isScrolled ? 'text-[#2C3E50]' : 'text-white'
+              className={`block w-full text-left py-2 text-sm font-medium uppercase tracking-wide transition-colors hover:text-accent ${
+                location.pathname === link.path ? 'text-accent' : isScrolled ? 'text-ink' : 'text-white'
               }`}
             >
-              {section === 'home' ? 'Home' : section === 'about' ? 'About Us' : section === 'services' ? 'Services' : 'Contact'}
-            </button>
+              {link.name}
+            </Link>
           ))}
-          <a
-  href="/news.html"
-  target="_blank"
-  rel="noopener noreferrer"
-  className={`block w-full text-left py-2 text-sm font-medium uppercase tracking-wide ${
-    isScrolled ? 'text-[#2C3E50]' : 'text-white'
-  }`}
->
-  News
-</a>
-          <button
-  onClick={() => scrollToSection('contact')}
-  className={`block w-full text-left py-2 text-sm font-medium uppercase tracking-wide ${
-    isScrolled ? 'text-[#2C3E50]' : 'text-white'
-  }`}
->
-  Contact
-</button>
-
+          <Link
+            to="/contact"
+            onClick={() => {
+              document.getElementById('mobile-menu')?.classList.add('hidden');
+            }}
+            className={`block w-full text-left py-2 text-sm font-medium uppercase tracking-wide transition-colors hover:text-accent ${
+              location.pathname === '/contact' ? 'text-accent' : isScrolled ? 'text-ink' : 'text-white'
+            }`}
+          >
+            Contact
+          </Link>
         </div>
       </div>
     </nav>

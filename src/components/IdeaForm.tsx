@@ -1,29 +1,25 @@
 import { useState } from 'react';
 import { Send } from 'lucide-react';
 
-interface IdeaFormProps {
-  type: 'idea' | 'partner';
-}
-
-export default function IdeaForm({ type }: IdeaFormProps) {
+export default function IdeaForm() {
   const [formData, setFormData] = useState({
     name: '',
-    idea: '',
+    inquiry: '',
     contact: '',
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(`${type} submission:`, formData);
-    alert(`Thank you for your ${type === 'idea' ? 'idea' : 'interest in partnering'}! We'll be in touch soon.`);
-    setFormData({ name: '', idea: '', contact: '' });
+    console.log(`Campaign inquiry submission:`, formData);
+    alert(`Thank you for your inquiry. We'll be in touch soon.`);
+    setFormData({ name: '', inquiry: '', contact: '' });
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-          Your Name
+        <label htmlFor="name" className="block text-sm font-medium text-ink mb-2">
+          Your Name / Organization
         </label>
         <input
           type="text"
@@ -31,32 +27,28 @@ export default function IdeaForm({ type }: IdeaFormProps) {
           required
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C0392B] focus:border-transparent transition-all"
-          placeholder="Enter your full name"
+          className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-0 focus:border-ink transition-colors"
+          placeholder="Enter your name or organization"
         />
       </div>
 
       <div>
-        <label htmlFor="idea" className="block text-sm font-medium text-gray-700 mb-2">
-          {type === 'idea' ? 'Your Idea / Inquiry' : 'Partnership Proposal'}
+        <label htmlFor="inquiry" className="block text-sm font-medium text-ink mb-2">
+          Campaign Inquiry / Needs
         </label>
         <textarea
-          id="idea"
+          id="inquiry"
           required
-          value={formData.idea}
-          onChange={(e) => setFormData({ ...formData, idea: e.target.value })}
+          value={formData.inquiry}
+          onChange={(e) => setFormData({ ...formData, inquiry: e.target.value })}
           rows={6}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C0392B] focus:border-transparent transition-all resize-none"
-          placeholder={
-            type === 'idea'
-              ? 'Tell us about your business idea or inquiry...'
-              : 'Describe your investment interests and partnership goals...'
-          }
+          className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-0 focus:border-ink transition-colors resize-none"
+          placeholder="Tell us about your political campaign, strategy needs, or operational challenges..."
         />
       </div>
 
       <div>
-        <label htmlFor="contact" className="block text-sm font-medium text-gray-700 mb-2">
+        <label htmlFor="contact" className="block text-sm font-medium text-ink mb-2">
           Contact Information
         </label>
         <input
@@ -65,17 +57,17 @@ export default function IdeaForm({ type }: IdeaFormProps) {
           required
           value={formData.contact}
           onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C0392B] focus:border-transparent transition-all"
+          className="w-full px-4 py-3 border border-gray-300 rounded-none focus:ring-0 focus:border-ink transition-colors"
           placeholder="Email or phone number"
         />
       </div>
 
       <button
         type="submit"
-        className="w-full bg-[#C0392B] hover:bg-[#A93226] text-white py-4 rounded-lg font-medium text-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+        className="w-full bg-ink hover:bg-ink-light text-white py-4 rounded-none font-medium text-sm tracking-widest uppercase transition-colors duration-300 flex items-center justify-center space-x-2"
       >
-        <span>Submit</span>
-        <Send className="w-5 h-5" />
+        <span>Submit Inquiry</span>
+        <Send className="w-4 h-4" />
       </button>
     </form>
   );
