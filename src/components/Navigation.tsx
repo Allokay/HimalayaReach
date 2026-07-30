@@ -30,11 +30,13 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           <Link
             to="/"
-            className="flex items-center space-x-2 group"
+            className="flex items-center space-x-3 group"
           >
-            <div className={`p-1.5 transition-colors ${(isScrolled || location.pathname !== '/') ? 'bg-ink' : 'bg-white/20'}`}>
-              <Mountain className="w-8 h-8 text-white" />
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="Himalaya Reach Logo" 
+              className="h-10 w-auto object-contain transition-transform group-hover:scale-105"
+            />
             <span
               className={`font-serif text-xl font-bold transition-colors ${
                 (isScrolled || location.pathname !== '/') ? 'text-ink' : 'text-white'
