@@ -144,10 +144,12 @@ export default function About() {
             {/* Team Member 1 */}
             <div className="group relative overflow-hidden bg-white border border-gray-100 rounded-lg">
               <div className="aspect-[4/5] bg-gray-200 relative">
-                {/* Placeholder Image Space */}
-                <div className="absolute inset-0 bg-gray-300 mix-blend-multiply flex items-center justify-center text-gray-500 font-light text-sm tracking-widest uppercase">
-                  Image Pending
-                </div>
+                <img 
+                  src="/Sachin.jpeg" 
+                  alt="Sachin G Tandukar" 
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                />
+                <div className="absolute inset-0 bg-ink/10 mix-blend-multiply transition-opacity duration-700 group-hover:opacity-0" />
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-ink p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                 <h3 className="font-serif text-2xl font-bold text-white mb-1">Sachin G Tandukar</h3>
@@ -158,10 +160,12 @@ export default function About() {
             {/* Team Member 2 */}
             <div className="group relative overflow-hidden bg-white border border-gray-100 rounded-lg">
               <div className="aspect-[4/5] bg-gray-200 relative">
-                {/* Placeholder Image Space */}
-                <div className="absolute inset-0 bg-gray-300 mix-blend-multiply flex items-center justify-center text-gray-500 font-light text-sm tracking-widest uppercase">
-                  Image Pending
-                </div>
+                <img 
+                  src="/Suman.jpeg" 
+                  alt="Suman Raj Paudel" 
+                  className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700"
+                />
+                <div className="absolute inset-0 bg-ink/10 mix-blend-multiply transition-opacity duration-700 group-hover:opacity-0" />
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-ink p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                 <h3 className="font-serif text-2xl font-bold text-white mb-1">Suman Raj Paudel</h3>

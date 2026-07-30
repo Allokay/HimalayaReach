@@ -1,0 +1,134 @@
+nepal
+Version 1.0.0 published 2018-02-03 by samundrak
+Maintainers: samundrak
+https://npm.im/nepal
+
+nepal-geojson
+Lightweight package for map of Nepal
+Version 5.0.0-alpha published 2021-11-14 by acesmndr
+Maintainers: acesmndr
+Keywords: Nepal Map Geojson
+https://npm.im/nepal-geojson
+
+nepal-places
+Zero-dependency Nepal geographical data — Provinces, Districts, Municipalities, Wards. Works with React, Node.js, any JS framework.
+Version 0.3.0 published 2026-07-02 by kushal1o1
+Maintainers: kushal1o1
+Keywords: nepal nepali places provinces districts municipalities wards geography nepal-data nepal-geography koshi bagmati gandaki lumbini karnali madhesh sudurpashchim dropdown location-picker nepal-places
+https://npm.im/nepal-places
+
+@al/core
+Node Enterprise Packages for Alert Logic (NEPAL) Core Library
+Version 1.4.18 published 2026-03-18 by npm_alertlogic
+Maintainers: npm_alertlogic autobuild-al
+https://npm.im/@al/core
+
+nepal-sambat
+A Vue 3 component for Nepal Sambat calendar conversion
+Version 2.1.7 published 2025-05-27 by nicolas0112
+Maintainers: nicolas0112
+Keywords: nepal-sambat nepal sambat converter ad to nepal sambat calendar nepal-sambat-converter AD to NS
+https://npm.im/nepal-sambat
+
+info-nepal
+List districts, provinces, zones, and municipalities of Nepal with English & Devanagari support.
+Version 2.1.0 published 2025-08-27 by sandip.basnet
+Maintainers: ajutamang sandip.basnet
+Keywords: info-nepal districts-nepal localbodies-nepal nepal-info Lists of districts of Nepal Nepal districts Province wise districts of Nepal Municipalities in Nepal Districts in Nepal Provinces in Nepal Devanagari support
+https://npm.im/info-nepal
+
+bsad-datepicker
+A dual-mode BS/AD date picker for React applications — built for Nepal.
+Version 1.0.9 published 2026-06-23 by saransh-koirala
+Maintainers: saransh-koirala
+Keywords: nepali datepicker bs ad bikram-sambat nepal calendar react
+https://npm.im/bsad-datepicker
+
+nepal-district-map
+Interactive SVG map of Nepal with all 77 districts and 7 provinces for React. Choropleth, hover, click, province filter — zero dependencies.
+Version 1.1.0 published 2026-05-28 by palniraj
+Maintainers: palniraj
+Keywords: nepal map svg react districts provinces interactive choropleth nepal-map geographic visualization dashboard nepal-districts 77-districts 7-provinces svg-map data-visualization heatmap coverage-map distribution-map
+https://npm.im/nepal-district-map
+
+states-nepal
+Get structured dataset about administrative division in Nepal.
+Version 0.3.1 published 2025-07-19 by adarshaacharya
+Maintainers: adarshaacharya
+Keywords: states-nepal nepal nepali district-nepal municipality-nepal province-nepal
+https://npm.im/states-nepal
+
+react-nepal-map
+React component for Nepal Map
+Version 1.0.2 published 2020-07-23 by keyrunpay
+Maintainers: keyrunpay
+https://npm.im/react-nepal-map
+
+nepal-bullion-price
+Nepal gold and silver prices — FENEGOSIDA daily rates + live international prices with estimate breakdown
+Version 0.3.1 published 2026-05-31 by pawanpaudel93
+Maintainers: pawanpaudel93
+Keywords: nepal gold silver bullion price fenegosida nepal-gold-price mcp mcp-server
+https://npm.im/nepal-bullion-price
+
+@trilehq/sdk
+Official TypeScript SDK for the Trile API — payments infrastructure for Nepal.
+Version 0.2.1 published 2026-07-15 by trilejs
+Maintainers: trilejs
+https://npm.im/@trilehq/sdk
+
+nepal-administrative-data
+Complete Nepal administrative boundaries and government data API - provinces, districts, municipalities (Gaunpalika/Nagarpalika) with bilingual search and TypeScript definitions. Perfect for mapping, location-based services in Nepal.
+Version 1.0.10 published 2025-07-16 by dikshyaghale
+Maintainers: dikshyaghale
+Keywords: nepal local data administrative data local data administrative boundaries government geospatial gis province district municipalities gaunpalika nagarpalika bilingual nepali typescript data api local-government mapping location demographics census search utility geographic south-asia
+https://npm.im/nepal-administrative-data
+
+data-de-nepal
+Nepal location dataset containing provinces, districts, municipalities, and wards with TypeScript support.
+Version 1.0.2 published 2026-06-19 by raziv
+Maintainers: raziv
+Keywords: nepal location provinces districts municipalities wards address
+https://npm.im/data-de-nepal
+
+nepal-demography
+Nepal Geo-Location package
+Version 1.0.3 published 2024-02-28 by bishnu123
+Maintainers: bishnu123
+https://npm.im/nepal-demography
+
+@itzsa/nepal-geo
+Nepal provinces, districts, local levels & wards — React selects + data helpers
+Version 0.2.1 published 2026-07-19 by itzsa
+Maintainers: itzsa
+Keywords: nepal province district municipality metropolitan ward local-level geography select react
+https://npm.im/@itzsa/nepal-geo
+
+fiscal-year-nepal
+Upcoming fiscal expire date from given date for Nepal in A.D
+Version 1.0.4 published 2019-02-07 by sbimochan
+Maintainers: sbimochan
+Keywords: fiscal-year date nepali-date nepali-fiscal-year
+https://npm.im/fiscal-year-nepal
+
+vue-great-nepal
+Vue package for greater Nepal map
+Version 1.4.0 published 2021-04-20 by jwn25
+Maintainers: jwn25
+Keywords: nepal nepal-map vue-nepal-nepal map-of-nepal vue-nepal
+https://npm.im/vue-great-nepal
+
+@react-map/nepal
+Beautiful, easy to use and interactive svg map component of Nepal for React
+Version 1.0.9 published 2024-11-01 by shubhexists
+Maintainers: shubhexists
+Keywords: interactive-maps react-maps react svg-maps maps react-components nepal-map nepal nepal-react-component nepal-svg nepal-react-map
+https://npm.im/@react-map/nepal
+
+@itzsa/nepal-geo-data
+Nepal administrative geography data only — provinces, districts, local levels, wards (no React)
+Version 0.1.1 published 2026-07-19 by itzsa
+Maintainers: itzsa
+Keywords: nepal province district municipality metropolitan ward local-level geography data
+https://npm.im/@itzsa/nepal-geo-data
+

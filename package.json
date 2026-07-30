@@ -11,13 +11,18 @@
     "typecheck": "tsc --noEmit -p tsconfig.app.json"
   },
   "dependencies": {
+    "@react-map/nepal": "^1.0.9",
     "@supabase/supabase-js": "^2.57.4",
+    "d3-geo": "^3.1.1",
     "framer-motion": "^12.23.26",
     "lucide-react": "^0.344.0",
+    "nepal-district-map": "^1.1.0",
+    "nepal-geojson": "^5.0.0-alpha",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^3.0.0",
-    "react-router-dom": "^7.18.1"
+    "react-router-dom": "^7.18.1",
+    "react-simple-maps": "^3.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",

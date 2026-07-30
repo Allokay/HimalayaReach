@@ -53,10 +53,10 @@ export default function Footer() {
                 <div className="flex items-center justify-between">
                   <p className="text-white font-serif text-xl">Sachin G Tandukar</p>
                   <div className="flex gap-3">
-                    <a href="tel:+9779761444489" className="text-gray-400 hover:text-gold transition-colors">
+                    <a href="tel:+9779843802580" className="text-gray-400 hover:text-gold transition-colors">
                       <Phone className="w-4 h-4" />
                     </a>
-                    <a href="https://wa.me/9779761444489" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500 transition-colors">
+                    <a href="https://wa.me/9779843802580" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500 transition-colors">
                       <MessageCircle className="w-4 h-4" />
                     </a>
                   </div>
@@ -67,10 +67,10 @@ export default function Footer() {
                 <div className="flex items-center justify-between">
                   <p className="text-white font-serif text-xl">Suman Raj Paudel</p>
                   <div className="flex gap-3">
-                    <a href="tel:+9779761444489" className="text-gray-400 hover:text-gold transition-colors">
+                    <a href="tel:+9779806762336" className="text-gray-400 hover:text-gold transition-colors">
                       <Phone className="w-4 h-4" />
                     </a>
-                    <a href="https://wa.me/9779761444489" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500 transition-colors">
+                    <a href="https://wa.me/9779806762336" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500 transition-colors">
                       <MessageCircle className="w-4 h-4" />
                     </a>
                   </div>
