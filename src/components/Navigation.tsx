@@ -32,12 +32,12 @@ export default function Navigation() {
             to="/"
             className="flex items-center space-x-2 group"
           >
-            <div className={`p-1.5 transition-colors ${isScrolled ? 'bg-ink' : 'bg-white/20'}`}>
-              <Mountain className={`w-8 h-8 ${isScrolled ? 'text-white' : 'text-white'}`} />
+            <div className={`p-1.5 transition-colors ${(isScrolled || location.pathname !== '/') ? 'bg-ink' : 'bg-white/20'}`}>
+              <Mountain className="w-8 h-8 text-white" />
             </div>
             <span
               className={`font-serif text-xl font-bold transition-colors ${
-                isScrolled ? 'text-ink' : 'text-white'
+                (isScrolled || location.pathname !== '/') ? 'text-ink' : 'text-white'
               }`}
             >
               Himalaya Reach
@@ -50,7 +50,9 @@ export default function Navigation() {
                 key={link.path}
                 to={link.path}
                 className={`text-sm font-medium uppercase tracking-wide transition-colors hover:text-accent ${
-                  location.pathname === link.path ? 'text-accent' : isScrolled ? 'text-ink' : 'text-white'
+                  location.pathname === link.path 
+                    ? 'text-accent' 
+                    : (isScrolled || location.pathname !== '/') ? 'text-ink' : 'text-white'
                 }`}
               >
                 {link.name}
@@ -59,7 +61,9 @@ export default function Navigation() {
             <Link
               to="/contact"
               className={`text-sm font-medium uppercase tracking-wide transition-colors hover:text-accent ${
-                location.pathname === '/contact' ? 'text-accent' : isScrolled ? 'text-ink' : 'text-white'
+                location.pathname === '/contact' 
+                  ? 'text-accent' 
+                  : (isScrolled || location.pathname !== '/') ? 'text-ink' : 'text-white'
               }`}
             >
               Contact
@@ -78,17 +82,17 @@ export default function Navigation() {
             <div className="space-y-1.5">
               <span
                 className={`block w-6 h-0.5 transition-colors ${
-                  isScrolled ? 'bg-ink' : 'bg-white'
+                  (isScrolled || location.pathname !== '/') ? 'bg-ink' : 'bg-white'
                 }`}
               />
               <span
                 className={`block w-6 h-0.5 transition-colors ${
-                  isScrolled ? 'bg-ink' : 'bg-white'
+                  (isScrolled || location.pathname !== '/') ? 'bg-ink' : 'bg-white'
                 }`}
               />
               <span
                 className={`block w-6 h-0.5 transition-colors ${
-                  isScrolled ? 'bg-ink' : 'bg-white'
+                  (isScrolled || location.pathname !== '/') ? 'bg-ink' : 'bg-white'
                 }`}
               />
             </div>
